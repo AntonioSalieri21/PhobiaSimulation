@@ -30,7 +30,14 @@
 				"Linux",
 				"Android"
 			]
+		},
+		{
+			"Name": "BlueprintFileUtils",
+			"Enabled": true
 		}
+	],
+	"AdditionalPluginDirectories": [
+		"../../UnrealPlugins"
 	],
 	"TargetPlatforms": [
 		"Android",
