@@ -34,6 +34,10 @@
 		{
 			"Name": "BlueprintFileUtils",
 			"Enabled": true
+		},
+		{
+			"Name": "VictoryBPLibrary",
+			"Enabled": true
 		}
 	],
 	"AdditionalPluginDirectories": [
