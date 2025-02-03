@@ -4,22 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "TestCPP.generated.h"
+#include "CFL_VisibilityCheck.generated.h"
 
 UCLASS()
-class VRPROJECT_API ATestCPP : public AActor
+class VRPROJECT_API ACFL_VisibilityCheck : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ATestCPP();
-
-	UFUNCTION(BlueprintCallable, Category = "Abilities")
-		void SpawnActor();
-
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<AActor> actorToSpawn;
+	ACFL_VisibilityCheck();
 
 protected:
 	// Called when the game starts or when spawned

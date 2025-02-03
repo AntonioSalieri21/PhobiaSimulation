@@ -32,8 +32,10 @@ void ATestCPP::Tick(float DeltaTime)
 
 void ATestCPP::SpawnActor()
 {
+	FActorSpawnParameters spawnParams;
+	spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
-
+	GetWorld()->SpawnActor<AActor>(actorToSpawn, GetActorTransform(), spawnParams);
 
 }
 
