@@ -48,6 +48,10 @@
 		{
 			"Name": "VictoryBPLibrary",
 			"Enabled": true
+		},
+		{
+			"Name": "GPULightmass",
+			"Enabled": true
 		}
 	],
 	"AdditionalPluginDirectories": [

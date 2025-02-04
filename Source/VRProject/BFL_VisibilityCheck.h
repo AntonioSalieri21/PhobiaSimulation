@@ -16,9 +16,9 @@ class VRPROJECT_API UBFL_VisibilityCheck : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 		UFUNCTION(BlueprintCallable, Category = "VisibilityCheck")
-		static bool IsVisibleToPlayer(UCameraComponent* camera, AActor* object, float CameraAngle, AActor* IgnoredActor = nullptr);
+		static bool IsVisibleToPlayer(UCameraComponent* camera, AActor* object, float CameraAngle, AActor* IgnoredActor = nullptr, bool Debug = false);
 
-		static bool LineTraceTest(FVector Start, FVector End, AActor* TargetActor, AActor* IgnoredActor = nullptr);
+		static bool LineTraceTest(FVector Start, FVector End, AActor* TargetActor, AActor* IgnoredActor = nullptr, bool Debug = false);
 		
 	
 };
