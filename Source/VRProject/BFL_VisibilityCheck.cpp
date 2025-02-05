@@ -176,7 +176,7 @@ bool UBFL_VisibilityCheck::IsVisibleToPlayer(UCameraComponent* camera, FVisibili
         for (UVisibilityPointComponent* point : ActorData.VisibilityPoints)
         {
             FVector End = point->GetComponentLocation();
-            if (LineTracePoint(CameraLocation, End , point, IgnoredActor, Debug))
+            if (LineTraceActor(CameraLocation, End , object, IgnoredActor, Debug))
             {
                 VisiblePointsCnt++;
                 if (VisiblePointsCnt >= Threshold)
